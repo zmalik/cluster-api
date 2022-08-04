@@ -94,7 +94,7 @@ func (p *ProviderID) Equals(o *ProviderID) bool {
 
 // String returns the string representation of this object.
 func (p *ProviderID) String() string {
-	return p.original
+	return strings.ToLower(p.original)
 }
 
 // Validate returns true if the provider id is valid.
